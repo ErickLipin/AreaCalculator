@@ -4,4 +4,16 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="AreaCalculatorTests\**" />
+    <EmbeddedResource Remove="AreaCalculatorTests\**" />
+    <None Remove="AreaCalculatorTests\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+    <None Remove="SqlQuery_1.sql" />
+  </ItemGroup>
+
 </Project>
